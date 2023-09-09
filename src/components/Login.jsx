@@ -14,8 +14,11 @@ const Login = () => {
       .then((result) => console.log(result))
       .then(()=> navigate("/generate"))
       .catch((error) => console.log(error));
-      
   };
+
+  if (Auth.currentUser) {
+    navigate("/generate");
+  }
 
   return (
     <div className="flex-1  flex flex-col ">

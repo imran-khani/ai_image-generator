@@ -11,7 +11,7 @@ const Navbar = () => {
   const logOut = async () => {
     await signOut(Auth)
       .then(() => {
-        navigate("/login");
+        navigate("/");
       })
       .catch((error) => console.log(error));
   };

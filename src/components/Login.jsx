@@ -1,15 +1,20 @@
+import { useNavigate } from "react-router-dom";
 import { Auth, provider } from "../firebase.config";
 import { signInWithPopup } from "firebase/auth";
 
 const Login = () => {
+  const navigate = useNavigate();
   const signIn = () => {
     if (Auth.currentUser) {
       document.getElementById("my_modal_1").showModal();
       return;
     }
+    
     signInWithPopup(Auth, provider)
       .then((result) => console.log(result))
+      .then(()=> navigate("/generate"))
       .catch((error) => console.log(error));
+      
   };
 
   return (

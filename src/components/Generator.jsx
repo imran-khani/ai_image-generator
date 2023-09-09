@@ -40,17 +40,17 @@ const ImageGenerationForm = () => {
         Please provide your detailed prompt here and the ai will generate 
         an image based on your prompt.
       </p>
-      <form onSubmit={handleSubmit} className="mx-auto">
+      <form onSubmit={handleSubmit} className=" flex flex-col sm:flex-row gap-5 justify-center sm:gap-2">
         <input
           type="text"
           name="input"
           placeholder="type your prompt here..."
-          className="px-5 py-3 border-none outline-none rounded-md mr-5"
+          className="px-5 py-3 border-none outline-none rounded-md w-full sm:w-1/2"
         />
         <button
           type="submit"
           className="px-2 py-2 bg-indigo-500 text-white font-bold"
-        >
+        > 
           Generate
         </button>
       </form>

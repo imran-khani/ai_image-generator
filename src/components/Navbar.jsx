@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between p-5 items-center">
+    <nav className="flex justify-between p-5 items-center flex-col sm:flex-row">
       <span className="text-xl font-bold text-indigo-500">NEXTGEN</span>
       <ul className="flex gap-5 items-center">
         <Link to="/">Home</Link>

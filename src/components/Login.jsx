@@ -7,6 +7,7 @@ const Login = () => {
   const signIn = () => {
     if (Auth.currentUser) {
       document.getElementById("my_modal_1").showModal();
+      navigate("/generate");
       return;
     }
     

@@ -12,7 +12,7 @@ const App = () => {
       children: [
         { path: "/", element: <Login /> },
         { path: "/generate", element: <Generator /> },
-        { path: "*", element: <Error/> },
+        { path: "*", element: <Error /> },
       ],
     },
   ]);

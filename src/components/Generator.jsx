@@ -32,7 +32,7 @@ const ImageGenerationForm = () => {
   };
 
   return (
-    <div className="flex flex-col gap-10 p-5 text-center">
+    <div className="flex flex-col gap-5 p-5 text-center">
       <h1>
         Stable <span>Diffusion</span>
       </h1>
@@ -49,7 +49,7 @@ const ImageGenerationForm = () => {
         />
         <button
           type="submit"
-          className="px-2 py-2 bg-indigo-500 text-white font-bold"
+          className="px-2 py-2 bg-indigo-500 text-white font-bold rounded-md w-full sm:w-1/4"
         > 
           Generate
         </button>
